@@ -1,9 +1,10 @@
 <?php
-    //Set headers & subject
-    $headers  = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $headers .= 'From: Test Scores <mhamill@student.bradford.ac.uk>' . "\r\n";
-    $subject = 'Data Message';
+    //Set sender, headers & subject
+    $sender = "them@example.com";
+    $headers  = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+    $headers .= "From: Data Sender <$sender>" . "\r\n";
+    $subject = "Data Sender";
     
     //Load data and message template
     $datafile = "data.txt";
